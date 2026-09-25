@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "postinstall": "nuxt prepare layers/base && nuxt prepare sites/alpha && nuxt prepare sites/beta",
+    "postinstall": "nuxt prepare layers/base && nuxt prepare layers/cms && nuxt prepare sites/alpha && nuxt prepare sites/beta",
     "dev:all": "concurrently -k -n alpha,beta -c blue,green \"npm:dev:alpha\" \"npm:dev:beta\"",
     "dev:alpha": "nuxt dev sites/alpha",
     "dev:beta": "nuxt dev sites/beta",

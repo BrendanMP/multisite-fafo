@@ -1,4 +1,4 @@
 export default defineNuxtConfig({
-  extends: ['../../layers/base'],
+  extends: ['../../layers/cms'],
   devServer: { port: 3001 },
 })

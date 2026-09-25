@@ -1,12 +1,6 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
-
 const { site } = useAppConfig()
-
-const items: NavigationMenuItem[] = [
-  { label: 'Home', to: '/' },
-  { label: 'About', to: '/about' },
-]
+const items = useMenu('header')
 </script>
 
 <template>

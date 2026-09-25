@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { site } = useAppConfig()
+const items = useMenu('footer')
 </script>
 
 <template>
@@ -9,5 +10,10 @@ const { site } = useAppConfig()
         © {{ new Date().getFullYear() }} {{ site.name }}
       </p>
     </template>
+
+    <UNavigationMenu
+      :items="items"
+      variant="link"
+    />
   </UFooter>
 </template>

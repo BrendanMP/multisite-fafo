@@ -1,0 +1,6 @@
+{
+  "items": [
+    { "label": "Home", "to": "/" },
+    { "label": "About", "to": "/about" }
+  ]
+}
