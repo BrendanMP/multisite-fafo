@@ -1,0 +1,31 @@
+{
+  "name": "multisite-fafo",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "postinstall": "nuxt prepare layers/base && nuxt prepare sites/alpha && nuxt prepare sites/beta",
+    "dev:all": "concurrently -k -n alpha,beta -c blue,green \"npm:dev:alpha\" \"npm:dev:beta\"",
+    "dev:alpha": "nuxt dev sites/alpha",
+    "dev:beta": "nuxt dev sites/beta",
+    "build:alpha": "nuxt build sites/alpha",
+    "build:beta": "nuxt build sites/beta",
+    "generate:alpha": "nuxt generate sites/alpha",
+    "generate:beta": "nuxt generate sites/beta",
+    "preview:alpha": "nuxt preview sites/alpha",
+    "preview:beta": "nuxt preview sites/beta",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.11.2",
+    "nuxt": "^4.5.2",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^1.17.0",
+    "concurrently": "^10.0.5",
+    "eslint": "^10.11.0"
+  }
+}
