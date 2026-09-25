@@ -1,11 +1,11 @@
 <template>
   <div class="flex min-h-screen flex-col">
-    <SiteHeader />
+    <AppHeader />
     <UMain>
       <UContainer class="py-8">
         <slot />
       </UContainer>
     </UMain>
-    <SiteFooter />
+    <AppFooter />
   </div>
 </template>
