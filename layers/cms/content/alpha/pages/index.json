@@ -1,3 +1,56 @@
 {
-  "title": "Alpha Home Page"
+  "title": "Alpha Home Page",
+  "sections": [
+    {
+      "type": "hero",
+      "content": {
+        "title": "Welcome to Alpha",
+        "subtitle": "This is the home page of the Alpha site."
+      }
+    },
+    {
+      "type": "cards",
+      "content": {
+        "title": "Featured Content",
+        "items": [
+          {
+            "content": {
+              "title": "Savings",
+              "description": "This is a featured item.",
+              "action": {
+                "label": "Learn More",
+                "modal": "savings-calculator"
+              }
+            }
+          },
+          {
+            "content": {
+              "title": "Coverage",
+              "description": "This is a featured item.",
+              "action": {
+                "label": "Learn More",
+                "modal": "coverage",
+                "props": {
+                  "description": "Make sure you have service where you live, work, and play!"
+                }
+              }
+            }
+          },
+          {
+            "content": {
+              "title": "Compatibility",
+              "description": "This is a featured item.",
+              "action": {
+                "label": "Learn More",
+                "modal": "compatibility",
+                "props": {
+                  "description": "Make sure you have service where you live, work, and play!"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

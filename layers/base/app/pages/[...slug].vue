@@ -8,7 +8,12 @@ useHead({ title: page.value.title })
 </script>
 
 <template>
+  <CmsSections
+    v-if="page.sections?.length"
+    :sections="page.sections"
+  />
   <UPageHeader
+    v-else
     :title="page.title"
     :description="page.description"
   />
